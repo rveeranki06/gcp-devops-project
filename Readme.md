@@ -1,1 +1,3 @@
-# This is my first GCP-DeVOPS-Project
+# Docker first application 
+        - This application written in Python
+        - It will be deployed in GKE
