@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: gcp-devops-gke
   labels:
-    app: web
+    app: gcp
 spec:
   selector:
     matchLabels:
       app: gcp
-  replicas: 1
+  replicas: 2
   strategy:
     type: RollingUpdate
   template:
