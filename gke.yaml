@@ -8,7 +8,7 @@ spec:
   # 1. How many copies of each pod do we want?
   replicas: 1
   # 2. How do want to update the pods?
-  strategy: Recreate
+  #strategy: Recreate
   # 3. Which pods are managed by this deployment?
   selector:
     # This must match the labels we set on the pod!
@@ -28,6 +28,6 @@ spec:
           image: gcr.io/gcp-devops-384710/gcpdevops:latest
           ports:
           - containerPort: 5000
-          env:
-           - name: PORT
-             value: "5000"
+          #env:
+           #- name: PORT
+            # value: "5000"
