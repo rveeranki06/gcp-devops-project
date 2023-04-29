@@ -3,14 +3,12 @@ kind: Deployment
 metadata:
   name: gcp-devops-gke
   labels:
-    app: web
+    app: gcp
 spec:
   selector:
     matchLabels:
       app: gcp
-  replicas: 1
-  strategy:
-    type: RollingUpdate
+  replicas: 2
   template:
     metadata:
       labels:
@@ -21,6 +19,3 @@ spec:
         image: gcr.io/gcp-devops-384710/gcpdevops:latest
         ports:
         — containerPort: 5000
-        env:
-          - name: PORT
-            value: "5000"
