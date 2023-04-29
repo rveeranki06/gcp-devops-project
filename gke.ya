@@ -10,7 +10,7 @@ spec:
       app: gcp
   replicas: 2
   strategy:
-    type: RollingUpdate
+    type: RollingUpdatei
   template:
     metadata:
       labels:
