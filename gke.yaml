@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gcp-devops-gke
+  name: gcp-devops-gke1
   labels:
     app: gcp
 spec:
