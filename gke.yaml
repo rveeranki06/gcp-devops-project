@@ -15,7 +15,6 @@ spec:
     metadata:
       labels:
         app: gcp
-  ###test###
     spec:
       containers:
       — name: gcp-devops-gke
